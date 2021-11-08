@@ -1,6 +1,4 @@
 from functions import voltar_programa, confirma_e_busca
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 import requests
 
 print('===================================')
@@ -39,7 +37,7 @@ while True:
                 break
 
         # CONFIRMA O CEP E BUSCA A ÁREA DA CIDADE 
-        confirma_e_busca()
+        confirma_e_busca(ent_cep)
         
         # VOLTA O PROGRAMA DO INÍCIO
     elif opcao == 2:
