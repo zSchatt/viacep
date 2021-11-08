@@ -10,11 +10,10 @@ option = Options()
 option.headless = True
 driver = webdriver.Firefox(options=option)
 
-def confirma_e_busca():
-    conf_cep = input("\nCONFIRME O SEU CEP: ")
+def confirma_e_busca(cep):
 
     # ENDEREÇO VIACEP    
-    url = requests.get('http://viacep.com.br/ws/{}/json/'.format(conf_cep))
+    url = requests.get('http://viacep.com.br/ws/{}/json/'.format(cep))
     end_dados = url.json()
 
     # MOSTRANDO AS INFORMAÇÕES DO CEP
@@ -50,6 +49,7 @@ def confirma_e_busca():
         print('\nDESLIGANDO PROGRAMA...')
     else:
         print('\nCOMANDO NÃO IDENTIFICADO.')
+
 
 def voltar_programa():
     ent_cep = input("\nDIGITE O SEU CEP: ")
