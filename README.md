@@ -13,7 +13,7 @@ Para iniciar este projeto foram importadas algumas bibliotecas do python, são e
 >>> pip install selenium
 
 
-## FUNCIONAMENTO
+## RESUMO
 O código, por primeira parte, pergunta se o usuário deseja digitar um cep,
 se o usuário digitar que sim, o código pede o cep e, a partir disso,
 ele filtra para ver se o cep é válido em questões de: tamanho do cep e
