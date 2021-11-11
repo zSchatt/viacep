@@ -1,19 +1,19 @@
 # VIACEP
 
 
-## OBJETIVO
-O código tem a função de explicar as informações de uma cidade, 
+## SOBRE O PROJETO
+Este projeto tem a função de explicar as informações de uma cidade, 
 cujo cep é fornecido pelo usuário, e dizer quantos algarismos possui a área da cidade.
 
 
-## INSTALAÇÃO
+## NECESSÁRIO PARA UTILIZAR
 Para iniciar este projeto foram importadas algumas bibliotecas do python, são elas:
 >>> requests
 
 >>> selenium
 
 
-## FUNCIONAMENTO
+## FUNCIONAMENTO DO PROJETO
 O código, por primeira parte, pergunta se o usuário deseja digitar um cep,
 se o usuário digitar que sim, o código pede o cep e, a partir disso,
 ele filtra para ver se o cep é válido em questões de: tamanho do cep e
