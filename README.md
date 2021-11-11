@@ -8,12 +8,12 @@ cujo cep é fornecido pelo usuário, e dizer quantos algarismos possui a área d
 
 ## INSTALAÇÃO
 Para iniciar este projeto foram importadas algumas bibliotecas do python, são elas:
->>> pip install requests
+>>> requests
 
->>> pip install selenium
+>>> selenium
 
 
-## RESUMO
+## FUNCIONAMENTO
 O código, por primeira parte, pergunta se o usuário deseja digitar um cep,
 se o usuário digitar que sim, o código pede o cep e, a partir disso,
 ele filtra para ver se o cep é válido em questões de: tamanho do cep e
