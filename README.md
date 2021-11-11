@@ -9,10 +9,11 @@ cujo cep é fornecido pelo usuário, e dizer quantos algarismos possui a área d
 ## NECESSÁRIO PARA UTILIZAR
 >>> Python 3
 
-E algumas bibliotecas do Python. que são:
 >>> requests
 
 >>> selenium
+
+>>> geckodriver
 
 
 ## FUNCIONAMENTO DO PROJETO
