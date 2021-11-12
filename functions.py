@@ -47,6 +47,7 @@ def confirma_e_busca(cep):
         print('\nTEM', len(area_cidade) - 15, 'ALGARISMOS DE ÁREA.')
     elif saber_algarismos == 2:
         print('\nDESLIGANDO PROGRAMA...')
+        exit()
     else:
         print('\nCOMANDO NÃO IDENTIFICADO.')
 
@@ -55,8 +56,16 @@ def voltar_programa():
     ent_cep = input("\nDIGITE O SEU CEP: ")
 
     # VERIFICANDO SE A QUANTIDADE DE NÚMEROS PARA O CEP ESTÁ CERTA
-    if len(ent_cep) != 8:
-        print('\nQUANTIDADE DE NÚMEROS INVÁLIDA!')
+    while len(ent_cep) != 8:     
+        print('\nNÃO FOI POSSÍVEL IDENTIFICAR.')
+        o_cep=int(input('\nDESEJA BUSCAR OUTRO CEP?\n1. SIM\n2. NÃO\nDIGITE AQUI: '))
+        if o_cep == 1:
+            voltar_programa()
+        elif o_cep == 2:
+            print('\nDESLIGANDO PROGRAMA...')
+            exit()
+        else:
+            print('')
                 
     url = requests.get('http://viacep.com.br/ws/{}/json/'.format(ent_cep))
     end_dados = url.json()
@@ -69,6 +78,7 @@ def voltar_programa():
             voltar_programa()
         elif o_cep == 2:
             print('\nDESLIGANDO PROGRAMA...')
+            exit()
 
     # MOSTRANDO AS INFORMAÇÕES DO CEP
     print('\nDESEJA VER AS INFORMAÇÕES COLETADAS DESTE CEP?')
@@ -101,5 +111,7 @@ def voltar_programa():
         print('\nTEM', len(area_cidade) - 15, 'ALGARISMOS DE ÁREA.')
     elif saber_algarismos == 2:
         print('\nDESLIGANDO PROGRAMA...')
+        driver.close()
+        exit()
     else:
         print('\nCOMANDO NÃO IDENTIFICADO.')
