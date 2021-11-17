@@ -38,13 +38,15 @@ def confirma_e_busca(cep):
     time.sleep(1.5)
     driver.find_elements(By.CSS_SELECTOR, 'h3.LC20lb.DKV0Md')[1].click()
     time.sleep(1.5)
-    area_cidade = driver.find_elements(By.TAG_NAME, 'p')[9].text
+    a_cid = driver.find_elements(By.TAG_NAME, 'p')[9].text
 
     # MOSTRANDO A INFORMAÇÃO DA ÁREA 
-    print('\nDESEJA SABER QUANTOS ALGARISMOS TEM A ÁREA DA CIDADE?')
+    print('\nDESEJA SABER A SOMA DOS ALGARISMOS DA ÁREA DA CIDADE?')
     saber_algarismos = int(input('1. SIM\n2. NÃO\nDIGITE AQUI: '))
     if saber_algarismos == 1:
-        print('\nTEM', len(area_cidade) - 15, 'ALGARISMOS DE ÁREA.')
+        soma = int(a_cid[0]) + int(a_cid[1]) + int(a_cid[2]) + int(a_cid[4]) + int(a_cid[5]) + int(a_cid[6])
+        print(f'\nA SOMA DOS ALGARISMOS É IGUAL A {soma}')
+
     elif saber_algarismos == 2:
         print('\nDESLIGANDO PROGRAMA...')
         exit()
@@ -102,16 +104,17 @@ def voltar_programa():
     time.sleep(1.5)
     driver.find_elements(By.CSS_SELECTOR, 'h3.LC20lb.DKV0Md')[1].click()
     time.sleep(1.5)
-    area_cidade = driver.find_elements(By.TAG_NAME, 'p')[9].text
+    a_cid = driver.find_elements(By.TAG_NAME, 'p')[9].text
 
     # MOSTRANDO A INFORMAÇÃO DA ÁREA 
-    print('\nDESEJA SABER QUANTOS ALGARISMOS TEM A ÁREA DA CIDADE?')
+    print('\nDESEJA SABER A SOMA DOS ALGARISMOS DA ÁREA DA CIDADE?')
     saber_algarismos = int(input('1. SIM\n2. NÃO\nDIGITE AQUI: '))
     if saber_algarismos == 1:
-        print('\nTEM', len(area_cidade) - 15, 'ALGARISMOS DE ÁREA.')
+        soma = int(a_cid[0]) + int(a_cid[1]) + int(a_cid[2]) + int(a_cid[4]) + int(a_cid[5]) + int(a_cid[6])
+        print(f'\nA SOMA DOS ALGARISMOS É IGUAL A {soma}')
+
     elif saber_algarismos == 2:
         print('\nDESLIGANDO PROGRAMA...')
-        driver.close()
         exit()
     else:
         print('\nCOMANDO NÃO IDENTIFICADO.')
