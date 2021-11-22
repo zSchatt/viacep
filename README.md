@@ -10,13 +10,12 @@ cujo cep é fornecido pelo usuário, e dizer quantos algarismos possui a área d
 
 
 ## NECESSÁRIO PARA UTILIZAR
->>> Python 3
+>>> pip install requests
 
->>> requests
-
->>> selenium
+>>> pip install selenium
 
 >>> geckodriver
+>>> https://github.com/mozilla/geckodriver/releases (geckodriver-v0.30.0-win64.zip) - LINK PARA DOWNLOAD
 
 
 ## FUNCIONAMENTO DO PROJETO
