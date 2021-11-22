@@ -14,7 +14,7 @@ cujo cep é fornecido pelo usuário, e dizer quantos algarismos possui a área d
 
 >>> pip install selenium
 
->>> geckodriver
+>>> geckodriver                     
 >>> https://github.com/mozilla/geckodriver/releases (geckodriver-v0.30.0-win64.zip) - LINK PARA DOWNLOAD
 
 
